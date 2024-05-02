@@ -55,3 +55,87 @@ code .
 // opens index.html in vs code
 code index.html
 ```
+
+# Git Repository Commands
+
+```JavaScript
+
+// turns folder into a local repository
+git init
+
+// If you don’t want a folder to be a repository anymore, just delete the .git (hidden) folder
+
+// checks the status of the repository
+git status
+
+// We must have a .gitignore file in the Git repository. In that file, we can add filenames starting with a dot and git will ignore that those files even exist.
+
+
+
+// We must also have a README.md file in the Git repository. It has all the information about the project.
+
+
+// added as changes to be committed, committed to staged
+git add README.md
+
+
+// adds all files to be committed
+git add .
+
+
+// good practice to use lowercase for commit message and message in present tense i.e. Add files instead of added files
+git commit -m  “commit message”
+
+// gives us add the previous commit details
+git log
+
+// gives just one last previous commit
+git log --oneline
+
+// goes backs to the last committed version of your file
+git restore  README.md
+
+// restores previous version of all files
+git restore .
+
+// gives connection to GitHub
+git remote add origin git@github.com…………………
+
+
+git remote -v
+
+// allows developers to publish their local code changes to a remote repository, specifically the main branch, often referred to as master  (Executed only once at the beginning)
+git push -u origin main
+
+//publishes code to the main branch
+git push
+
+//downloads latest code
+git pull
+
+
+// cloning repository:
+git clone git@github.com:neuefische/tellicherry-ber-web-24-1.git
+
+```
+
+# Git Branch Commands
+
+```JavaScript
+
+// createa a new branch and switch to it
+git switch -c <branchname>
+
+// switch branches
+git switch <branchname>
+
+// list your branches
+git branch
+
+// list your branches (local and remote)
+git branch -a
+
+// delete a branch
+git branch -d <branchname>
+
+```
