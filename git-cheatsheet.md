@@ -70,10 +70,7 @@ git status
 
 // We must have a .gitignore file in the Git repository. In that file, we can add filenames starting with a dot and git will ignore that those files even exist.
 
-
-
 // We must also have a README.md file in the Git repository. It has all the information about the project.
-
 
 // added as changes to be committed, committed to staged
 git add README.md
